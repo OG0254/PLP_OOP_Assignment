@@ -12,53 +12,11 @@ Each vehicle implements the same method `move()` but behaves differently.
 - **Boat** → move() prints "Sailing 🚤"
 - **Bicycle** → move() prints "Pedaling 🚴"
 
----
-
-## 🔑 Code Example
-
-```python
-# Base Class
-class Vehicle:
-    def move(self):
-        pass  # placeholder method
-
-
-# Subclasses with their own implementation of move()
-class Car(Vehicle):
-    def move(self):
-        return "Driving 🚗"
-
-
-class Plane(Vehicle):
-    def move(self):
-        return "Flying ✈️"
-
-
-class Boat(Vehicle):
-    def move(self):
-        return "Sailing 🚤"
-
-
-class Bicycle(Vehicle):
-    def move(self):
-        return "Pedaling 🚴"
-
-
-# Example Usage
-if __name__ == "__main__":
-    vehicles = [Car(), Plane(), Boat(), Bicycle()]
-
-    for v in vehicles:
-        print(f"{v.__class__.__name__}: {v.move()}")
-```
-
----
-
 ## 🚀 How to Run
-1. Save the code into a file called `activity2.py`.
+1. Save the code into a file called `main2.py`.
 2. Run it with:
    ```bash
-   python activity2.py
+   main2.py
    ```
 3. You’ll see how the same method `move()` behaves differently for each vehicle.
 
